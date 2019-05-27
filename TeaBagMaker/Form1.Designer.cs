@@ -40,6 +40,7 @@
             this.cbBox.Name = "cbBox";
             this.cbBox.Size = new System.Drawing.Size(245, 20);
             this.cbBox.TabIndex = 0;
+            this.cbBox.SelectedIndexChanged += new System.EventHandler(this.CbBox_SelectedIndexChanged);
             // 
             // bt_start
             // 
@@ -50,6 +51,7 @@
             this.bt_start.TabIndex = 1;
             this.bt_start.Text = "담그기!";
             this.bt_start.UseVisualStyleBackColor = true;
+            this.bt_start.Click += new System.EventHandler(this.Bt_start_Click);
             // 
             // lb_time
             // 
@@ -60,6 +62,7 @@
             this.lb_time.Size = new System.Drawing.Size(70, 20);
             this.lb_time.TabIndex = 2;
             this.lb_time.Text = "시간 : ";
+            this.lb_time.Click += new System.EventHandler(this.Lb_time_Click);
             // 
             // Form1
             // 
