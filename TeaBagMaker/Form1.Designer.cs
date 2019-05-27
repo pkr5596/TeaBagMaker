@@ -28,20 +28,59 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.cbBox = new System.Windows.Forms.ComboBox();
+            this.bt_start = new System.Windows.Forms.Button();
+            this.lb_time = new System.Windows.Forms.Label();
             this.SuspendLayout();
+            // 
+            // cbBox
+            // 
+            this.cbBox.FormattingEnabled = true;
+            this.cbBox.Location = new System.Drawing.Point(13, 13);
+            this.cbBox.Name = "cbBox";
+            this.cbBox.Size = new System.Drawing.Size(245, 20);
+            this.cbBox.TabIndex = 0;
+            // 
+            // bt_start
+            // 
+            this.bt_start.Font = new System.Drawing.Font("돋움", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.bt_start.Location = new System.Drawing.Point(265, 12);
+            this.bt_start.Name = "bt_start";
+            this.bt_start.Size = new System.Drawing.Size(75, 23);
+            this.bt_start.TabIndex = 1;
+            this.bt_start.Text = "담그기!";
+            this.bt_start.UseVisualStyleBackColor = true;
+            // 
+            // lb_time
+            // 
+            this.lb_time.AutoSize = true;
+            this.lb_time.Font = new System.Drawing.Font("돋움", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.lb_time.Location = new System.Drawing.Point(13, 52);
+            this.lb_time.Name = "lb_time";
+            this.lb_time.Size = new System.Drawing.Size(70, 20);
+            this.lb_time.TabIndex = 2;
+            this.lb_time.Text = "시간 : ";
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(396, 429);
+            this.ClientSize = new System.Drawing.Size(347, 92);
+            this.Controls.Add(this.lb_time);
+            this.Controls.Add(this.bt_start);
+            this.Controls.Add(this.cbBox);
             this.Name = "Form1";
             this.Text = "Form1";
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
+
+        private System.Windows.Forms.ComboBox cbBox;
+        private System.Windows.Forms.Button bt_start;
+        private System.Windows.Forms.Label lb_time;
     }
 }
 
